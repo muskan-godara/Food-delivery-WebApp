@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodie — Delicious food, delivered to you</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" aria-label="Foodie home">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span class="brand-name">Foodie</span>
+        </a>
+      </div>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#restaurants">Restaurants</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#app">App</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth">
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Delicious food,<br>delivered to you</h1>
+          <p class="lead">Order from your favorite restaurants and get your meal delivered fast, fresh, and hot. Discover the best food in your city with Foodie!</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary large" href="#restaurants">Order Now</a>
+          </div>
+
+          <form class="search-card" action="#" method="get" aria-label="Search restaurants">
+            <label for="location" class="visually-hidden">Enter your location</label>
+            <input id="location" name="location" type="text" placeholder="Enter your location" required>
+
+            <label for="category" class="visually-hidden">Category</label>
+            <select id="category" name="category">
+              <option>All Categories</option>
+              <option>Pizza</option>
+              <option>Burgers</option>
+              <option>Sushi</option>
+              <option>Indian</option>
+              <option>Chinese</option>
+            </select>
+
+            <button class="btn btn-search" type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-image-wrap">
+            <img src="photo1.png" alt="Top view of plated food" class="hero-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section categories">
+      <div class="container">
+        <h2>Browse by Category</h2>
+        <div class="category-grid" role="list">
+          <article class="category" role="listitem">
+            <div class="cat-icon">🍕</div>
+            <p>Pizza</p>
+          </article>
+          <article class="category" role="listitem">
+            <div class="cat-icon">🍔</div>
+            <p>Burgers</p>
+          </article>
+          <article class="category" role="listitem">
+            <div class="cat-icon">🍣</div>
+            <p>Sushi</p>
+          </article>
+          <article class="category" role="listitem">
+            <div class="cat-icon">🍛</div>
+            <p>Indian</p>
+          </article>
+          <article class="category" role="listitem">
+            <div class="cat-icon">🥟</div>
+            <p>Chinese</p>
+          </article>
+          <article class="category" role="listitem">
+            <div class="cat-icon">🧁</div>
+            <p>Desserts</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="restaurants" class="section restaurants">
+      <div class="container">
+        <h2>Featured Restaurants</h2>
+        <div class="restaurant-grid">
+          <article class="restaurant-card">
+            <img src="photo1.png" alt="Interior of Pizza Palace" class="restaurant-thumb">
+            <div class="card-body">
+              <h3>Pizza Palace</h3>
+              <p class="muted">Pizza, Italian</p>
+              <div class="rating">★ 4.8</div>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <img src="photo2.png" alt="Burger Hub food" class="restaurant-thumb">
+            <div class="card-body">
+              <h3>Burger Hub</h3>
+              <p class="muted">Burgers, Fast Food</p>
+              <div class="rating">★ 4.6</div>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <img src="photo3.png" alt="Sushi World dishes" class="restaurant-thumb">
+            <div class="card-body">
+              <h3>Sushi World</h3>
+              <p class="muted">Sushi, Japanese</p>
+              <div class="rating">★ 4.7</div>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <img src="photo4.png" alt="Spice Route dishes" class="restaurant-thumb">
+            <div class="card-body">
+              <h3>Spice Route</h3>
+              <p class="muted">Indian, Curry</p>
+              <div class="rating">★ 4.5</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section promo">
+      <div class="container promo-inner">
+        <h2>Promo Offers</h2>
+        <div class="promo-grid">
+          <div class="promo-card">🎉 Get 30% OFF on your first order!</div>
+          <div class="promo-card">🚚 Free delivery on orders above $20</div>
+          <div class="promo-card">🍔 Buy 1 Get 1 Free on Burgers every Friday</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="test-grid">
+          <figure class="testimonial">
+            <img src="images/avatar1.jpg" alt="Sarah M" class="avatar">
+            <blockquote>"Foodie makes ordering food so easy and quick! The delivery is always on time and the food is hot."</blockquote>
+            <figcaption>— Sarah M.</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <img src="images/avatar1.jpg" alt="James L" class="avatar">
+            <blockquote>"Great selection of restaurants and amazing offers. Highly recommend to all food lovers!"</blockquote>
+            <figcaption>— James L.</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <img src="images/avatar1.jpg" alt="Priya S" class="avatar">
+            <blockquote>"The app is super user-friendly and the customer support is fantastic. Love Foodie!"</blockquote>
+            <figcaption>— Priya S.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="app" class="section app-cta">
+      <div class="container app-inner">
+        <div class="app-left">
+          <h2>Get the Foodie App</h2>
+          <p>Order food on the go! Download our app for the best experience and exclusive app-only deals.</p>
+          <div class="app-links">
+            <a href="#" class="app-badge" aria-label="Download on Google Play">Google Play</a>
+            <a href="#" class="app-badge" aria-label="Download on App Store">App Store</a>
+          </div>
+        </div>
+        <div class="app-right" aria-hidden="true">
+          <div class="app-mockup">📱</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Cities Served</h4>
+        <ul>
+          <li>New York</li>
+          <li>Los Angeles</li>
+          <li>Chicago</li>
+          <li>Houston</li>
+          <li>Miami</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:support@foodie.com">support@foodie.com</a></p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#" aria-label="Website">🌐</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Foodie. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
